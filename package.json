@@ -1,0 +1,54 @@
+{
+  "name": "tracker-warden",
+  "version": "1.0.0",
+  "description": "Inventory the third-party trackers, pixels and SDKs on your built static site: 45 known vendors with company and category (advertising, analytics, session replay, social, tag managers), unknown domains, tracking pixels, approved-vendor gate, JSON/CSV inventory. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "tracker-warden": "bin/tracker-warden.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "privacy",
+    "trackers",
+    "third-party",
+    "tracking-pixel",
+    "gdpr",
+    "vendor-inventory",
+    "analytics",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/tracker-warden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/tracker-warden/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/tracker-warden#readme"
+}
