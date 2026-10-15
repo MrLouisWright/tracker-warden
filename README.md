@@ -1,5 +1,7 @@
 # tracker-warden
 
+[![npm version](https://img.shields.io/npm/v/tracker-warden.svg)](https://www.npmjs.com/package/tracker-warden) [![CI](https://github.com/MrLouisWright/tracker-warden/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/tracker-warden/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/tracker-warden.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Inventory every third-party tracker, pixel and SDK your built static site loads, with vendor, company and category, and gate CI on an approved-vendor list.
 
 Privacy notices, cookie banners and DPIAs all start with the same question: which third parties does the site actually load? Tags get added through templates, CMS embeds and marketing snippets, and the list drifts. `tracker-warden` reads every built HTML page, finds third-party scripts, inline SDK snippets (`fbq(`, `gtag(`, `_hsq`, ...), tracking pixels, iframes, stylesheets and media, matches them to a vendor database, and produces an inventory plus findings with the file, line, severity and a **concrete fix**.
