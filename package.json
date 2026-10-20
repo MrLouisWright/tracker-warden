@@ -1,6 +1,6 @@
 {
   "name": "tracker-warden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inventory the third-party trackers, pixels and SDKs on your built static site: 45 known vendors with company and category (advertising, analytics, session replay, social, tag managers), unknown domains, tracking pixels, approved-vendor gate, JSON/CSV inventory. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
