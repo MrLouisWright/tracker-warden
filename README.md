@@ -65,7 +65,7 @@ MEDIUM   index.html:3 Meta Pixel (Meta) [advertising, sells/shares data] on 1 pa
 ## Options
 
 ```text
-tracker-warden 1.0.0 — inventory third-party trackers, pixels and SDKs in your built site
+tracker-warden 1.0.1 — inventory third-party trackers, pixels and SDKs in your built site
 
 Usage: tracker-warden [site-dir] [options]
 
@@ -171,12 +171,20 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev tracker-warden
+```
+
 ```js
 import { check, inventory, VENDORS, vendorForUrl } from "tracker-warden";
 const report = check("dist", { approved: ["plausible"] });
 console.log(report.info.inventory);
 vendorForUrl("https://connect.facebook.net/en_US/fbevents.js").name; // "Meta Pixel"
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("tracker-warden")` from CommonJS.
 
 Types are included.
 
